@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon blog</title>
+</head>
+<body>
+    
+    {% if list_publication  %}
+    <ul>
+        
+        {% for publication in list_publication %}
+        <li><a href=" ">{{publication.publication_title}}  </a>publie le {{publication.pub_date}}</li>    
+        {% endfor %}
+            
+    </ul>
+        
+    {% endif %}
+        
+</body>
+</html>
